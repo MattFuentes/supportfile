@@ -6,12 +6,9 @@ import { MainDialog } from "./dialogs/mainDialog";
 import WelcomeCard from "./cards/welcomeCard";
 import QaMattMessageExtension from "../qaMattMessageExtension/QaMattMessageExtension";
 import { DialogSet, DialogState } from "botbuilder-dialogs";
-// Initialize debug logging module
 const log = debug("msteams");
 
-/**
- * Implementation for qa-matt Message Extension Bot
- */
+
 @BotDeclaration(
     "/api/messages",
     new MemoryStorage(),
